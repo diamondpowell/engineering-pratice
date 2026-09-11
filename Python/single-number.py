@@ -1,6 +1,10 @@
-class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
-        result = 0
-        for num in nums:
-            result ^= num
-        return result 
+from typing import List
+
+def singleNumber(nums: List[int]) -> int:
+    result = 0
+
+    for num in nums:
+        result ^= num
+
+    return result
+print(singleNumber([2, 2, 1]))
